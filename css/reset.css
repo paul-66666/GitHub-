@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;box-sizing:border-box;	font-family: myfont;}
+li{list-style:none;}
+a{text-decoration:none;}
+
+
+
+/*清浮动*/
+.clearfix:after{
+	display:block;
+	content:"";
+	width:0px;
+	height:0px;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix{
+	zoom:1;
+}

@@ -1,0 +1,574 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*导入外部字体*/
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+
+}
+
+/*图片自适应屏幕宽度大小*/
+.main-dishes{max-width:100%;height:auto;}  
+
+/*蒙版效果*/
+#hero-area:before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:url(../images/overlay-pattern.png) #000;
+	opacity:0.3;
+}
+/*当屏幕大于768px小于992px时*/
+@media(min-width:768px){
+	.container{
+		width:750px;
+	}
+}
+/*当屏幕大于992px小于1200px时*/
+@media(min-width:992px){
+	.container{
+		width:970px;
+	}
+}
+/*当屏幕大于1200px时*/
+@media(min-width:1200px){
+	.container{
+		width:1170px;
+	}
+}
+
+/*导航居中*/
+#navigation-wrapper{
+	height:15px;
+}
+.container{
+	margin:0  auto;
+}
+.navigation .container .top-nav{
+	margin-top:-80px;
+	margin-right:15px;
+	margin-left:15px;
+	z-index:5;
+	position:relative;
+
+}
+.navigation .nav{
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:25px;
+	background:rgba(255,255,255,0.89);
+	
+
+}
+
+/*LOGO*/
+.navbar-header{
+	float:left;
+
+}
+.navbar-brand{
+	display:block;
+	height:50px;
+	padding:15px;
+	
+}
+/*导航*/
+.navbar-nav{
+	float:right;
+	margin-right:15px;
+	margin-top:10px;
+}
+.navbar-collapse .navbar-nav>li{
+	float:left;
+}
+
+.navbar-nav li a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	position:relative;    /*before*/
+	color:#2E2E2E;
+	margin:0px 15px;
+	font-size:15px;
+	font-family:myfont;
+}
+
+.navbar-nav li a:hover{
+	border-bottom:2px solid #FF5333;
+
+}
+
+/*轮播图*/
+#slider{
+	background:#fff;
+	position:relative;
+	z-index:1;
+	padding-top:50px;
+	margin-top:-20px;
+}
+.container-featured{
+	margin-left:55px;
+	margin-right:55px;
+	margin-bottom:70px;
+}
+.title  h3{
+	font-family:myfont;
+	margin-bottom:30px;
+	float:left;
+}
+.owl-next{
+	width:14px;
+	height:24px;
+	background:url(../images/owl-next.png);
+	float:right;
+}
+
+.title  h3 span{
+	margin-left:5px;
+	color:red;
+}
+.owl-wrapper{
+	width:100%;
+	height:200px;
+	overflow:hidden;
+}
+.owl-wrapper a{
+	display:inline-block;
+	width:24%;
+	margin-right:5px;
+	float:left;
+}
+.owl-wrapper a img{
+	width:100%;
+}
+
+
+.owl-clickable{
+	margin-top:40px;
+	padding-left:48%;
+	
+}
+
+.owl-clickable li{
+	display:inline-block;
+	float:left;
+	margin-right:10px;
+	width:10px;
+	height:10px;
+	border-radius:25px;
+	background:#999;
+}
+
+.owl-clickable .active{
+	background:orange;
+}
+
+
+
+/*about us*/
+#about-us{
+	padding:100px 0;
+	background:#f6f6f6;
+	font-family:myfont;
+}
+
+.container-intro{
+	text-align:center;
+	margin:0 40px;
+	
+}
+
+.container-intro h1{
+	position:relative;
+	margin:50px 0;	
+	font-weight:500;
+	font-size:36px;
+	color:#2e2e2e;
+}
+.container-intro h1 span{
+	font-size:45px;
+	color:#ff530a;
+	font-weight:600;
+}
+
+.container-intro h1:before{
+	content:"";
+	width:200px;
+	height:1px;
+	color:red;
+	bottom:0;
+	position:absolute;
+	left:50%;
+	margin-left:-70px;
+	
+}
+
+.container-intro p{
+	color:#959595;
+	font-size:16px;
+	line-height:26px;
+	text-indent:52px;
+}
+
+
+/*blog*/
+/*背景图片*/
+#blog{
+	position:relative;
+	background:url(../images/blog/blog-bg.jpg) no-repeat;
+	background-attachment:fixed;
+	background-size:cover;	
+	padding-top:75px;
+	padding-bottom:180px;
+}
+/*蒙版效果*/
+#blog:before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:url(../images/overlay-pattern.png) #000;
+	opacity:0.3;
+	
+}
+.container-blog{
+	z-index:1;
+	position:relative;
+	margin:0 15px;
+}
+
+/*标题*/
+.container-blog h1{
+	font-size:36px;
+	color:#fff;
+	font-weight:500;
+	position:relative;
+	background:none;
+	text-align:center;
+}
+.container-blog h1:before{
+	content:"";
+	width:120px;
+	height:1px;
+	color:#C8C1B3;
+	bottom:0;
+	position:absolute;
+	display:block;
+}
+
+
+.container-blog span{
+	font-size:45px;
+	color:#ff530a;
+	font-weight:600;
+}
+
+/*图文区域*/
+.container-blog ul{
+	background:#fff;
+	margin-top:50px;
+}
+.container-blog  li{
+	float:left;
+}
+
+.container-blog  li{
+	position:relative;
+	width:50%;
+	overflow:hidden;
+}
+
+.container-blog .blog-text{
+	padding:40px 35px 23px;
+	font-size:16px;
+	line-height:16px;	
+	width:50%;
+	height:100%;
+	float:left;
+	text-align:center;
+}
+
+.container-blog .blog-text h3{
+	color:#323232;
+	padding:0 40px 20px;
+	line-height:26px;
+	position:relative;
+}
+.container-blog .blog-text h3:before{
+	content:"";
+	width:100px;
+	height:1px;
+	color:#323232;
+	position:absolute;
+	bottom:0;
+}
+.container-blog .blog-text p{
+	padding-top:25px;
+	color:#a2a2a2;
+}
+
+.container-blog  .blog-img{
+	width:50%;
+	height:100%;
+	overflow:hidden;
+	float:left;
+}
+.container-blog  .blog-img img{
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+
+
+
+.container-blog  .blog-img img:hover{
+	transform:rotate(10deg) scale(1.3);
+	-webkit-transform:rotate(10deg) scale(1.3);
+}
+.container-blog button{
+	position:absolute;
+	right:0;
+	bottom:-80px;
+	width:300px;
+	height:80px;
+	font-size:16px;
+	background:#ff530a;
+	color:#fff;
+	border:1px solid #ff530a;
+}
+.container-blog button:hover{
+	background:none;
+	color:#ff530a;
+}
+
+
+
+/*price*/
+#price{
+	padding-bottom:180px;
+	margin-top:40px;
+
+}
+
+.container-price h3{
+	text-align:center;
+	font-size:35px;
+	font-weight:500;
+	color:#2E2E2E;
+}
+
+.container-price h3 span{
+	font-size:45px;
+	font-weight:600;
+	color:#ff530a;
+}
+.container-price li{
+	position:relative;
+	margin-top:100px;
+}
+
+.container-price h2{
+	display:inline-block;
+	font-size:24px;
+	font-weight:500;
+	position:relative;
+	background:#fff;
+	z-index:2;
+
+}
+
+.container-price .border-bottom{
+	position: absolute;
+	top:0;
+	width:100%;
+	border:1px dotted #c9c9c9;
+	margin-top:20px;
+}
+
+.container-price li span{
+	float:right;
+	color:#938463;
+
+}
+
+.container-price li img{
+	margin-top:-50px;
+	float:right;
+	display:inline-block;
+	margin-left:50px;
+	z-index:1;
+	position:relative;
+}
+
+.container-price{
+	position:relative;
+}
+
+.container-price button{
+	position:absolute;
+	right:0;
+	bottom:-100px;
+	width:280px;
+	height:70px;
+	font-size:16px;
+	color:#ff530a;
+	font-size:16px;
+	font-weight:600;
+	border:1px solid #ff530a;
+	background:none;
+}
+
+.container-price button:hover{
+	background:#ff530a;
+	color:#fff;
+}
+
+/*subscribe*/
+#subscribe{
+	position:relative;
+	padding:70px 0;
+	background:url(../images/subscribe-bg.jpg) no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	text-align:center;
+}
+/*蒙版效果*/
+#subscribe:before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:url(../images/overlay-pattern.png) #000;
+	opacity:0.3;
+	
+}
+
+.container-sub h1{
+	padding:40px 0;
+	color:#fff;
+	font-size:36px;
+	font-weight:500;
+}
+.container-sub h1 span{
+	color:#ff530a;
+	font-size:45px;
+	font-weight:600;
+}
+
+.container-sub p{
+	color:#fff;
+	font-size:20px;
+	padding:25px 0;
+}
+
+.container-sub form{
+	padding:30px  0;
+}
+
+.container-sub form  .sub-text{
+	width:500px;
+	height:65px;
+	line-height:65px;
+	text-indent:20px;
+	color:#2e2e2e;
+	background:rgba(225,225,225,0.98);
+	border:none;
+	color:#a2a2a2;
+	font-size:16px;
+}
+
+.container-sub form  .sub-btn{
+	width:212px;
+	height:65px;
+	line-height:1;
+	border:none;
+	margin-left:-5px;
+	background:#7ec3bb;
+	color:#fff;
+	font-size:18px;
+	font-weight:400;
+	letter-spacing:2px;
+
+}
+
+/*contacts*/
+.container-tact{
+	text-align:center;
+	padding:70px 0;
+}
+
+.container-tact h1{
+	color:#ff530a;
+	font-size:45px;
+	font-weight:600;
+}
+
+.container-tact span{
+	font-size:36px;
+	color:#2e2e2e;
+	font-weight:500;
+}
+
+.container-tact form{
+	position:relative;
+	margin:50px 0;
+}
+
+.container-tact .text-mess{
+	margin-right:30%;
+	padding:10px 12px;
+	font-size:;
+	width:70%;
+	height:140px;
+	border:1px solid #ccc;
+	color:#555;
+	font-size:16px;	
+}
+
+.container-tact .text-name,.container-tact .text-addr{
+	width:29%; 
+	height:50px;
+	line-height:50px;
+	border:1px solid #ccc;
+	color:#555;
+	font-size:16px;
+	padding:5px;
+
+}
+
+.container-tact .text-name{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.container-tact .text-addr{
+	position:absolute;
+	right:0;
+	top:60px;
+}
+
+.container-tact button{
+	width:29%;
+	height:50px;
+	border:none;
+	background:#ff530a;
+	color:#fff;
+	font-size:16px;
+	position:absolute;
+	right:0;
+	bottom:-30px;
+
+}
